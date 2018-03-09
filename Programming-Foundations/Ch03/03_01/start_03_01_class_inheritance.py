@@ -29,3 +29,21 @@ class Motorcycle(Vehicle): # Inherits from Vehicle class
     # put on motocycle helmet
     def helmet(self):
         print('Nice and safe!')
+
+my_car = Car('red', 'Mercedes')
+my_mc = Motorcycle('silver', 'Harley')
+
+my_car.drive()
+my_mc.drive()
+
+my_mc.drive()
+my_mc.drive()
+my_mc.drive()
+my_mc.drive()
+
+my_car.drive()
+my_car.radio()
+my_car.window()
+my_mc.helmet()
+my_mc.window()
+
