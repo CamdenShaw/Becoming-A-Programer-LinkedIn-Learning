@@ -10,3 +10,37 @@ class shirt:
 
     def make_clean(self):
         self.clean = True
+
+red = shirt()
+
+crimson = red
+
+print(id(red))
+print(id(crimson))
+
+print(red.clean)
+print(crimson.clean)
+
+red.make_dirty()
+
+print(red.clean)
+print(crimson.clean)
+
+print(red is crimson)
+
+crimson = shirt()
+
+print(id(red))
+print(id(crimson))
+
+print(crimson.clean)
+print(red.clean)
+
+red.make_clean()
+
+print(crimson.clean)
+print(red.clean)
+
+print(red is crimson)
+
+
