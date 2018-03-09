@@ -2,6 +2,7 @@
 """ As per instructions """
 def mix_and_cook():
     print('Mixing the ingredients')
+    print('greasing the frying pan')
     print('Pouring the mixture into a frying pan')
     print('Cooking the first side')
     print('Flipping it!')
@@ -21,16 +22,16 @@ def make_pancake():
 
 def make_dish(x):
     print('Mixing the ingredients')
+    print('greasing the frying pan')
     print('Pouring the mixture into a frying pan')
     print('Cooking the first side')
     print('Flipping it!')
     print('Cooking the other side')
     y = 'a tasty ' + x
-    print(y)
     return y
 
-def make_omelette():
-    mix_and_cook('omelette')
+def cook_omelette():
+    return make_dish('omelette')
 
-def make_pancake():
-    mix_and_cook('pancake')
+def cook_pancake():
+    return make_dish('pancake')
