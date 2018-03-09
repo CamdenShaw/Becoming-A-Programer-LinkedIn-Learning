@@ -16,3 +16,13 @@ class jeans:
     def take_off(self):
         print('Taking off {}x{} {} jeans'.format(self.waist, self.length, self.color))
         self.wearing = False
+
+my_jeans = jeans(31, 32, 'red')
+print(type(my_jeans))
+print(dir(my_jeans))
+
+my_jeans.put_on()
+print(my_jeans.wearing)
+
+my_jeans.take_off()
+print(my_jeans.wearing)
