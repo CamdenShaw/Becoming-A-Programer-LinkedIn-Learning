@@ -20,3 +20,13 @@ munchkins = set(['Steve', 'Jackson', 'Frank', 'Bill',
 # set of Olivia's friends
 olivia = set(['Jim', 'Amanda', 'Verne', 'Nestor'])
 
+local = friends.intersection(zipcode)
+print(local)
+
+invite = local.difference(munchkins)
+print(invite)
+
+munchkins.difference(local)
+
+invite = invite.symmetric_difference(olivia)
+print(invite)
