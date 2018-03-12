@@ -1,6 +1,12 @@
 """ Where's My Mouse? """
 import tkinter
 
+my_tuple = ('a', 'b', 'c', 1, 2, 3)
+print(my_tuple)
+print(my_tuple[2])
+
+"""my_tuple[2] = 'brick'"""
+
 def mouse_click(event):
 
     # retrieve XY coords as a tuple
