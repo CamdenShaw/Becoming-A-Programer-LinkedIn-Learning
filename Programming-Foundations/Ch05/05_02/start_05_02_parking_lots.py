@@ -16,3 +16,16 @@ lot_3d = [[['Telsa','Fiat','BMW'], # 0th floor
           [['Mazda','Chevy'],      # 2nd floor
            [],
            ['Volkswagen']]]
+
+print(lot_2d)
+print(lot_2d[2])
+print(lot_2d[2][1])
+print(lot_3d)
+print(lot_3d[0])
+print(lot_3d[0][2])
+print(lot_3d[0][2][1])
+
+for floor in lot_3d:
+    for row in floor:
+     for car in row:
+         print(car)
