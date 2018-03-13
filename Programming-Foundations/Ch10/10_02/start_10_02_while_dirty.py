@@ -10,10 +10,11 @@ while(dirty):
     scrub_count += 1
     print('Scrub the pan: {}'.format(scrub_count))
 
-    print('Rinse & check if the pan is clean.')  
-
     if not random.randint(0,9):
         print('All clean!')
         dirty = False
     else:
         print('Still dirty...')
+
+    print('Rinse & check if the pan is clean.')  
+
