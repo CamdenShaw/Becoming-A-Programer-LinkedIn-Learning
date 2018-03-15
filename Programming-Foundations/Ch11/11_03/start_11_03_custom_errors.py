@@ -27,3 +27,37 @@ def cause_error(error_type):
     
     elif error_type == 'plumbing':
         raise PlumbingError('dishwasher', 'spraying water')
+    else:
+        raise OtherError('a generic household problem')
+
+try:
+    cause_error('electrical')
+except ElectricalError as e:
+    print(e)
+    print('Fix it myself')
+except PlumbingError as e:
+    print(e)
+    print('Call the plumber')
+
+try:
+    cause_error('plumbing')
+except ElectricalError as e:
+    print(e)
+    print('Fix it myself')
+except PlumbingError as e:
+    print(e)
+    print('Call the plumber')
+
+try:
+    cause_error('dead grass')
+except ElectricalError as e:
+    print(e)
+    print('Fix it myself')
+except PlumbingError as e:
+    print(e)
+    print('Call the plumber')
+except:
+    print('Well fuddle duddle')
+
+    
+    
